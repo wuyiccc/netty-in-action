@@ -45,6 +45,7 @@ public class PlainNioEchoServer {
                 ex.printStackTrace();
                 break;
             }
+            System.out.println("select...");
 
             // get all selectedKey instance
             Set<SelectionKey> selectionKeys = selector.selectedKeys();
