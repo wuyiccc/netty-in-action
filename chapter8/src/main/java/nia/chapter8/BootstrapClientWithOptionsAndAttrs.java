@@ -19,6 +19,10 @@ import java.net.InetSocketAddress;
  */
 public class BootstrapClientWithOptionsAndAttrs {
 
+    public static void main(String[] args) {
+        new BootstrapClientWithOptionsAndAttrs().bootstrap();
+    }
+
     /**
      * Listing 8.7 Using attributes
      * */
@@ -34,6 +38,7 @@ public class BootstrapClientWithOptionsAndAttrs {
                         throws Exception {
                         Integer idValue = ctx.channel().attr(id).get();
                         // do something with the idValue
+                        System.out.println(idValue);
                     }
 
                     @Override
